@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.data-storage"
+        version   = "1.0.0">
+
+  <name>Data Storage</name>
+
+  <description>
+    Data Storage
+  </description>
+
+  <author href="http://www.mattcoady.com" email="mcoady@vfs.com">
+    Matt Coady
+  </author>
+
+  <icon src="icon.png" />
+
+  <access origin="*"/> <!-- allow local pages -->
+
+</widget>

@@ -11,7 +11,7 @@
 <body>
   <div id="app">
     <div id="a" data-role="page">
-      <div data-role="header" data-id="myheader" data-position="fixed" role="banner" data-theme="b">
+      <div data-role="header" data-id="myheader" data-position="fixed" role="banner" data-theme="e">
         <h2>Homepage</h2>
       </div>
       <div data-role="content" class="nonbounce">
@@ -40,9 +40,9 @@
       <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-id="f1" data-theme="f">
         <div data-role="navbar">
           <ul>
-            <li><a href="#a" class="ui-btn-active ui-state-persist">Home</a></li>
-            <li><a href="#b" data-transition="slide">Settings</a></li>
-            <li><a href="#c" data-transition="slide">Firebase</a></li>
+            <li><a href="#a" class="ui-btn-active ui-state-persist" data-theme="e">Home</a></li>
+            <li><a href="#b" data-transition="slide" data-theme="f">Local Storage</a></li>
+            <li><a href="#c" data-transition="slide" data-theme="g">Firebase</a></li>
           </ul>
         </div>
       </div>
@@ -50,13 +50,13 @@
       
       
     <div id="b" data-role="page">
-      <div data-role="header" data-id="myheader" data-position="fixed" role="banner" data-theme="b">
-        <h2>Settings</h2>
+      <div data-role="header" data-id="myheader" data-position="fixed" role="banner" data-theme="f">
+        <h2>Local Storage</h2>
       </div>
       <div data-role="content" >
 
       <label for="tempslider">Temperature</label>
-      <input type="range" name="tempslider" id="tempslider" value="95" min="90" max="135" />
+      <input type="range" name="tempslider" id="tempslider" value="95" min="45" max="110" />
         <fieldset class="ui-grid-b letter-buttons">
           <div class="ui-block-a"><input type="button" value="A" data-theme="a" id="button-a"></div>
           <div class="ui-block-b"><input type="button" value="B" data-theme="a" id="button-b"></div>
@@ -66,17 +66,17 @@
       <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-id="f1" data-theme="f">
         <div data-role="navbar">
           <ul>
-            <li><a href="#a" data-transition="slide" data-direction="reverse">Home</a></li>
-            <li><a href="#b" class="ui-btn-active ui-state-persist">Settings</a></li>
-            <li><a href="#c" data-transition="slide">Firebase</a></li>
+            <li><a href="#a" data-transition="slide" data-direction="reverse" data-theme="e">Home</a></li>
+            <li><a href="#b" class="ui-btn-active ui-state-persist" data-theme="f">Local Storage</a></li>
+            <li><a href="#c" data-transition="slide" data-theme="g">Firebase</a></li>
           </ul>
         </div>
       </div>
     </div>
       
     <div id="c" data-role="page">
-      <div data-role="header" data-id="myheader" data-position="fixed" role="banner" data-theme="b">
-        <h2>Settings</h2>
+      <div data-role="header" data-id="myheader" data-position="fixed" role="banner" data-theme="g">
+        <h2>Firebase Storage</h2>
       </div>
       <div data-role="content" >
         <fieldset class="ui-grid-a">
@@ -97,9 +97,9 @@
       <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-id="f1" data-theme="f">
         <div data-role="navbar">
           <ul>
-            <li><a href="#a" data-transition="slide" data-direction="reverse">Home</a></li>
-            <li><a href="#b" data-transition="slide" data-direction="reverse">Settings</a></li>
-            <li><a href="#c" class="ui-btn-active ui-state-persist">Firebase</a></li>
+            <li><a href="#a" data-transition="slide" data-direction="reverse" data-theme="e">Home</a></li>
+            <li><a href="#b" data-transition="slide" data-direction="reverse" data-theme="f">Local Storage</a></li>
+            <li><a href="#c" class="ui-btn-active ui-state-persist" data-theme="g">Firebase</a></li>
           </ul>
         </div>
       </div>
