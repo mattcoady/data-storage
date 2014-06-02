@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, maximum-scale=1.0, user-scalable=no" />;
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.min.css">
+</head>
+
+<body>
+  <div id="app">
+    <div id="a" data-role="page">
+      <div data-role="header" data-id="myheader" data-position="fixed" role="banner" data-theme="b">
+        <h2>Homepage</h2>
+      </div>
+      <div data-role="content" class="nonbounce">
+
+        <fieldset class="ui-grid-b">
+          <div class="ui-block-a">
+            <label>Stored Slider Number</label>
+            <input type="text" id="stored-slider-num">
+            </div>
+            <div class="ui-block-a">
+              <label>Stored Button</label>
+              <input type="text" id="stored-button">
+            </div>
+        </fieldset>
+          
+        <fieldset class="ui-grid-a">
+          <div class="ui-block-a">
+            <input type="button" value="Load Saved Variables" id="load-button" data-theme="e">
+          </div>
+          <div class="ui-block-b">
+            <input type="button" value="Clear Data" id="clear-button" data-theme="d">
+          </div>
+        </fieldset>
+      </div>
+
+      <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-id="f1" data-theme="f">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#a" class="ui-btn-active ui-state-persist">Home</a></li>
+            <li><a href="#b" data-transition="slide">Settings</a></li>
+            <li><a href="#c" data-transition="slide">Firebase</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      
+      
+    <div id="b" data-role="page">
+      <div data-role="header" data-id="myheader" data-position="fixed" role="banner" data-theme="b">
+        <h2>Settings</h2>
+      </div>
+      <div data-role="content" >
+
+      <label for="tempslider">Temperature</label>
+      <input type="range" name="tempslider" id="tempslider" value="95" min="90" max="135" />
+        <fieldset class="ui-grid-b letter-buttons">
+          <div class="ui-block-a"><input type="button" value="A" data-theme="a" id="button-a"></div>
+          <div class="ui-block-b"><input type="button" value="B" data-theme="a" id="button-b"></div>
+          <div class="ui-block-c"><input type="button" value="C" data-theme="a" id="button-c"></div>
+        </fieldset>
+      </div>
+      <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-id="f1" data-theme="f">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#a" data-transition="slide" data-direction="reverse">Home</a></li>
+            <li><a href="#b" class="ui-btn-active ui-state-persist">Settings</a></li>
+            <li><a href="#c" data-transition="slide">Firebase</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      
+    <div id="c" data-role="page">
+      <div data-role="header" data-id="myheader" data-position="fixed" role="banner" data-theme="b">
+        <h2>Settings</h2>
+      </div>
+      <div data-role="content" >
+        <fieldset class="ui-grid-a">
+          <div class="ui-block-a">
+            <input type="text" id="fb-upload">
+          </div>
+          <div class="ui-block-b">
+            <input type="button" id="fb-upload-button" value="Upload">
+          </div>
+          <div class="ui-block-a">
+            <input type="text" id="fb-download">
+          </div>
+          <div class="ui-block-b">
+            <input type="button" id="fb-download-button" value="Download">
+          </div>
+        </fieldset>
+      </div>
+      <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-id="f1" data-theme="f">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#a" data-transition="slide" data-direction="reverse">Home</a></li>
+            <li><a href="#b" data-transition="slide" data-direction="reverse">Settings</a></li>
+            <li><a href="#c" class="ui-btn-active ui-state-persist">Firebase</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.2.js"></script>
+  <script src="js/nonbounce.js"></script>
+  <script src="js/fastclick.js"></script>
+  <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
